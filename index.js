@@ -1,9 +1,8 @@
-import express from 'express'; 
-import tiempo from "./time.js";
-const app = express();
+import app from'./app.js'
+
 const PORT = 3000;
 
-app.use(express.json()); 
 
-let fecha=new Date();
-console.log(fecha);
+app.listen(PORT, () => {
+    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  });
