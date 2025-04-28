@@ -16,10 +16,11 @@ export default function getHora() {
     let aa={
         hora:new Date().getHours(),
         mins: new Date().getMinutes(),
-        horaCompleta: hora+mins,
+        horaCompleta: `${new Date().getHours()} : ${new Date().getMinutes()}`,
         dia: new Date().getDay(),
         mes: new Date().getMonth(),
-
+        fechaCompleta: `Mes:${new Date().getMonth()}, Dia:${new Date().getDay()}  ${new Date().getHours()}:${new Date().getMinutes()}`
+        
 
 
     }

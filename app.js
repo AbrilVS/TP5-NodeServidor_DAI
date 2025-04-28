@@ -10,12 +10,11 @@ app.get('/', (req, res) => {
   });
 
   app.get('/hora', (req, res) => {
-    const horaActual = Time().hora;
-    const minsActual=Time().mins;
-    res.send(`La hora actual es: ${horaActual} : ${minsActual}`);
+    
+    res.send(Time().horaCompleta);
 });
 app.get('/fecha-completa', (req, res) => {
-    res.json(Time().fecha);
+    res.send(Time().fechaCompleta);
   });
 
 export default app
